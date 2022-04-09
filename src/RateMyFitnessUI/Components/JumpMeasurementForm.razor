@@ -1,0 +1,54 @@
+﻿@using Microsoft.Extensions.Logging
+@using ViewModels
+@inject ILogger<JumpViewModel> Logger
+
+<EditForm Model="@jumpModel" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <select id="gender" @bind="jumpModel.Gender">
+        @foreach (var label in GenderLabels)
+        {
+            <option value="@label.Label">@label.Label</option>
+        }
+    </select>
+    <InputNumber id="age" min="4" max="100" @bind-Value="jumpModel.Age" />
+
+    <InputNumber id="measurement" min="1" max="100" @bind-Value="jumpModel.Measurement" />
+    <button type="submit">Submit</button>
+</EditForm>
+
+<div id="rating">@rating</div>
+
+@code {
+    /// <summary>
+    /// Init variables for component
+    /// </summary>
+    private JumpViewModel jumpModel = new();
+    private string rating = "";
+    private GenderTypeViewModel genderNone = new GenderTypeViewModel() { Label = "None" };
+    private GenderTypeViewModel genderF = new GenderTypeViewModel() { Label = "Female" };
+    private GenderTypeViewModel genderM = new GenderTypeViewModel() { Label = "Male" };
+    private List<GenderTypeViewModel> GenderLabels = new List<GenderTypeViewModel>();
+    InputNumber<double> measurement = new InputNumber<double>();
+
+    /// <summary>
+    /// TODO: Extract these data populations to DB access or from file
+    /// </summary>
+    protected override void OnInitialized()
+    {
+        GenderLabels.Add(genderNone);
+        GenderLabels.Add(genderF);
+        GenderLabels.Add(genderM);
+    }
+
+    /// <summary>
+    /// Handle the form submission, if valid
+    /// </summary>
+    private void HandleValidSubmit()
+    {
+        //Logger.LogInformation("HandleValidSubmit called");
+
+        rating = "Your rating is: ";
+    }
+}
