@@ -15,7 +15,8 @@ namespace RateMyFitness.Core.Tests.Data
     /// </summary>
     public class JumpDbContextMock : DbContext
     {
-        public DbSet<Jump> Jumps { get; set; } = default!;
+        public DbSet<GenderType> GenderTypes { get; set; } = default!;
+        public DbSet<Rating> Ratings { get; set; } = default!;
         public DbSet<JumpStandard> JumpStandards { get; set; } = default!;
 
         public JumpDbContextMock(DbContextOptions<JumpDbContextMock> options) : base(options) { }

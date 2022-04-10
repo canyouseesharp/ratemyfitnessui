@@ -1,5 +1,4 @@
-﻿using NUnit.Framework;
-
+﻿using System;
 namespace RateMyFitness.Core.Tests.Models
 {
 	public class JumpTests
@@ -7,12 +6,6 @@ namespace RateMyFitness.Core.Tests.Models
 		public JumpTests()
 		{
 		}
-
-		[Test]
-		public void CanGetStandard()
-        {
-
-        }
 	}
 }
 

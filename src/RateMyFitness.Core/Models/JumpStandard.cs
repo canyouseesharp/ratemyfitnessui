@@ -6,7 +6,7 @@ namespace RateMyFitness.Core.Models
 	/// <summary>
 	/// Represents a standard for a jump based on age, gender and measurement.
 	/// </summary>
-	public class JumpStandard : IEntity
+    public class JumpStandard : IEntity
 	{
 		public int Id { get; private set; }
 

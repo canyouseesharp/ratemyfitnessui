@@ -9,7 +9,7 @@
     <select id="gender" @bind="jumpModel.Gender">
         @foreach (var label in GenderLabels)
         {
-            <option value="@label.Label">@label.Label</option>
+            <option value="@label">@label</option>
         }
     </select>
     <InputNumber id="age" min="4" max="100" @bind-Value="jumpModel.Age" />
@@ -26,21 +26,18 @@
     /// </summary>
     private JumpViewModel jumpModel = new();
     private string rating = "";
-    private GenderTypeViewModel genderNone = new GenderTypeViewModel() { Label = "None" };
-    private GenderTypeViewModel genderF = new GenderTypeViewModel() { Label = "Female" };
-    private GenderTypeViewModel genderM = new GenderTypeViewModel() { Label = "Male" };
-    private List<GenderTypeViewModel> GenderLabels = new List<GenderTypeViewModel>();
-    InputNumber<double> measurement = new InputNumber<double>();
 
     /// <summary>
     /// TODO: Extract these data populations to DB access or from file
     /// </summary>
-    protected override void OnInitialized()
+    private List<string> GenderLabels = new List<string>()
     {
-        GenderLabels.Add(genderNone);
-        GenderLabels.Add(genderF);
-        GenderLabels.Add(genderM);
-    }
+        { "None" },
+        { "Female" },
+        { "Male" }
+    };
+    InputNumber<double> measurement = new InputNumber<double>();
+
 
     /// <summary>
     /// Handle the form submission, if valid
