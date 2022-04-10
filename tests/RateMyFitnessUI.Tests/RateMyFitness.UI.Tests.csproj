@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2"><IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+<PrivateAssets>all</PrivateAssets>
+</PackageReference>
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="FluentAssertions" Version="6.6.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.58" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.58" />
+    <PackageReference Include="bunit" Version="1.6.4" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.NUnit" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SQLite" />
+    <None Remove="FluentAssertions" />
+    <None Remove="Features\" />
+    <None Remove="Steps\" />
+    <None Remove="Features\Jump\" />
+    <None Remove="Features\Speed\" />
+    <None Remove="Features\Lift\" />
+    <None Remove="SpecFlow" />
+    <None Remove="SpecFlow.Tools.MsBuild.Generation" />
+    <None Remove="SpecFlow.NUnit" />
+    <None Remove="AngleSharp" />
+    <None Remove="Jump\" />
+    <None Remove="bunit" />
+    <None Remove="xunit" />
+    <None Remove="xunit.runner.visualstudio" />
+    <None Remove="Serilog" />
+    <None Remove="Serilog.Extensions.Logging" />
+    <None Remove="Serilog.Sinks.NUnit" />
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="BaseTestWithInMemDb.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Steps\" />
+    <Folder Include="Features\Jump\" />
+    <Folder Include="Features\Speed\" />
+    <Folder Include="Features\Lift\" />
+    <Folder Include="Components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\RateMyFitness.Core\RateMyFitness.Core.csproj" />
+    <ProjectReference Include="..\..\src\RateMyFitnessUI\RateMyFitness.UI.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Fixtures\JumpStandardSeedData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

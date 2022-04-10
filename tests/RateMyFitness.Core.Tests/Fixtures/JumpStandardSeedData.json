@@ -1,0 +1,137 @@
+﻿[
+  {
+    "Id": 1,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 5.0,
+    "MeasurementMax": 10.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 2,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 5.0,
+    "MeasurementMax": 10.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 3,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 5.0,
+    "MeasurementMax": 10.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 4,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 10.01,
+    "MeasurementMax": 18.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 5,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 10.01,
+    "MeasurementMax": 18.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 6,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 10.01,
+    "MeasurementMax": 18.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 7,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 18.01,
+    "MeasurementMax": 24.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 8,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 18.01,
+    "MeasurementMax": 24.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 9,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 18.01,
+    "MeasurementMax": 24.0,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 10,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 24.01,
+    "MeasurementMax": 30.00,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 11,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 24.01,
+    "MeasurementMax": 30.00,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 12,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 24.01,
+    "MeasurementMax": 30.00,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 13,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 30.01,
+    "MeasurementMax": 40.00,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 14,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 30.01,
+    "MeasurementMax": 40.00,
+    "GenderId": 1,
+    "RatingId": 1
+  },
+  {
+    "Id": 15,
+    "AgeMin": 5,
+    "AgeMax": 100,
+    "MeasurementMin": 30.01,
+    "MeasurementMax": 40.00,
+    "GenderId": 1,
+    "RatingId": 1
+  }
+]

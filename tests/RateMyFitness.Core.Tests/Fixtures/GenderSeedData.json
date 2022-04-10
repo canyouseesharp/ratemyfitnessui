@@ -1,0 +1,14 @@
+﻿[
+  {
+    "Id": 1,
+    "Label": "None"
+  },
+  {
+    "Id": 2,
+    "Label": "Female"
+  },
+  {
+    "Id": 3,
+    "Label": "Male"
+  }
+]
