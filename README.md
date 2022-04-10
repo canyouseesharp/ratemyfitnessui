@@ -1,5 +1,5 @@
 # Rate My Fitness - Fitness Standards
-Demo Project, Work in Progress. Please read the specification document for further details.
+Demo Project, Work in Progress. Please read the specification on the wiki for further details: https://github.com/canyouseesharp/ratemyfitnessui/wiki/Specification
 
 ## Tech Stack & Packages
  - .NET 6
