@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using RateMyFitness.Core.Models.Interfaces;
+using RateMyFitness.Core.Interfaces;
 
 namespace RateMyFitness.Core.Models
 {

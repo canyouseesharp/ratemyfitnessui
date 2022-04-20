@@ -1,4 +1,4 @@
-﻿namespace RateMyFitness.Core.Models.Interfaces
+﻿namespace RateMyFitness.Core.Interfaces
 {
 	public interface IEntity
 	{
