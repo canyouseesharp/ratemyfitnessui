@@ -10,9 +10,9 @@
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Models\" />
-    <None Remove="Models\Abstractions\" />
     <None Remove="Microsoft.EntityFrameworkCore.Tools" />
-    <None Remove="Models\Interfaces\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Models\RatingStrategy\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
@@ -24,7 +24,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Models\Abstractions\" />
-    <Folder Include="Models\Interfaces\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\RatingStrategy\" />
   </ItemGroup>
 </Project>

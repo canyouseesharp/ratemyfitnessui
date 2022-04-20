@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using RateMyFitness.Core.Models.Interfaces;
+using RateMyFitness.Core.Interfaces;
 
 namespace RateMyFitness.Core.Models
 {
 	/// <summary>
 	/// Represents a standard for a jump based on age, gender and measurement.
 	/// </summary>
-    public class JumpStandard : IEntity
+    public class JumpStandard : IEntity, IStandard
 	{
 		public int Id { get; private set; }
 
@@ -60,6 +60,16 @@ namespace RateMyFitness.Core.Models
 			}
 			Id = id;
 		}
-	}
+
+		/// <summary>
+        /// Get the rating for this standard.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public Rating GetRating()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
 
